@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #2e3138;
+      }
+
+      ul {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+
+      ul li {
+        position: relative;
+
+        list-style: none;
+      }
+
+      ul li a {
+        position: relative;
+
+        font-size: 32pt;
+
+        text-decoration: none;
+
+        line-height: 36pt;
+
+        letter-spacing: 2px;
+
+        text-transform: uppercase;
+
+        color: transparent;
+
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+      }
+
+      ul li a::before {
+        content: attr(data-text);
+
+        position: absolute;
+
+        color: var(--clr);
+
+        width: 0;
+
+        overflow: hidden;
+
+        transition: 1s;
+
+        border-right: 4px solid var(--clr);
+
+        -webkit-text-stroke: 1px var(--clr);
+      }
+
+      ul li a:hover::before {
+        width: 100%;
+
+        filter: drop-shadow(0 0 25px var(--clr));
+      }
+    </style>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    <!-- Example Code -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">EL MEU COTXE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li style="--clr: #dc00d4" class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >INICI</a
+              >
+            </li>
+            <li style="--clr: #dc00d4" class="nav-item">
+              <a class="nav-link" href="motor.html">&nbsp;MOTOR&nbsp;</a>
+            </li>
+            <li style="--clr: #dc00d4" class="nav-item">
+              <a class="nav-link" href="electronica.html"
+                >&nbsp;ELECTRÒNICA&nbsp;</a
+              >
+            </li>
+            <li style="--clr: #dc00d4" class="nav-item">
+              <a class="nav-link" href="carrosseria.html"
+                >&nbsp;CARROSSERIA&nbsp;</a
+              >
+            </li>
+            <li style="--clr: #dc00d4" class="nav-item">
+              <a class="nav-link" href="proximament.html"
+                >&nbsp;PRÒXIMAMENT&nbsp;</a
+              >
+            </li>
+          </ul>
+          <!-- 
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Example Code -->
+  </body>
+</html>
